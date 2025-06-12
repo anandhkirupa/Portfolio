@@ -1,44 +1,51 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faUncharted } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import { faNetworkWired, faRobot } from "@fortawesome/free-solid-svg-icons";
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
     "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "PyTorch",
+    "TensorFlow",
+    "NumPy",
+    "pandas",
+    "scikit-learn",
+    "seaborn",
+    "matplotlib",
+    "TensorBoard",
+    "Torchinfo",
+    "Wandb"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "SQL (MySQL)",
+    "Views",
+    "Joins",
+    "Aggregations",
+    "Subqueries",
+    "ER Diagrams",
+    "Relational Schemas",
+    "Normalization",
+    "Power BI",
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
     "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
+    "FastAPI",
+    "Groq",
     "Streamlit",
+    "LLaMA",
+    "DeepSeek",
+    "Mistral(via Ollama)",
+    "FAISS",
+    "PyMuPDF",
+    "Transformers",
+    "SentenceTransformers",
+    "HuggingFace",
+    "dotenv"
 ];
 
 function Expertise() {
@@ -48,9 +55,9 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faNetworkWired} size="3x"/>
+                    <h3>Machine Learning & Deep Learning</h3>
+                    <p>I have built and trained a wide range of neural network architectures from scratch using PyTorch, including CNNs (VGG-16, ResNet-18), RNNs, LSTMs, Autoencoders, and Transformers. My experience spans across tasks like image classification, sentiment analysis, time-series forecasting, and anomaly detection. I have also implemented models for real-world datasets like OCTMNIST, Yahoo S5, and Amazon/Yelp reviews, emphasizing model interpretability, performance tuning, and custom evaluation metrics.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,9 +67,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faUncharted} size="3x"/>
+                    <h3>Data Analytics & Data Visualization</h3>
+                    <p>I engineered a full-stack analytics pipeline by designing and querying relational databases to derive insights into real-world retail operations. This project included advanced SQL querying (joins, aggregations, nested subqueries), ER modeling, and schema normalization. The results were integrated into interactive dashboards using Power BI, offering actionable visual insights into customer trends, product performance, and regional profitability.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,9 +79,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faRobot} size="3x"/>
+                    <h3>GenAI & RAG</h3>
+                    <p>I’ve designed and deployed end-to-end GenAI systems using LangChain, FastAPI, and Ollama to automate dynamic report generation from multi-modal data sources. My work includes building RAG pipelines that integrate custom retrievers, chunking strategies, and prompt templates to deliver context-aware summarization and analysis. These systems integrate semantic chunking, vector search (FAISS), and multi-stage prompting to deliver accurate, context-rich outputs for unstructured PDF and website data.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
