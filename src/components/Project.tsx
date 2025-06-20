@@ -6,31 +6,31 @@ import mock04 from '../assets/images/mock04.png';
 import mock05 from '../assets/images/mock05.png';
 import mock06 from '../assets/images/mock06.png';
 import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import mock08 from '../assets/images/dl_english_to_tamil.png';
+import mock09 from '../assets/images/dmql.png';
+import mock10 from '../assets/images/octmnist.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
     return(
     <div className="projects-container" id="projects">
-        <h1>Personal Projects</h1>
+        <h1>Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
-            </div>
+                <a href="https://pypi.org/project/octmnist-classifier/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://pypi.org/project/octmnist-classifier/" target="_blank" rel="noreferrer"><h2>OCTMNIST Classifier</h2></a>
+                <p>Developed a pip-installable CNN-based OCTMNIST retinal disease classifier with CLI tools, data balancing, and pretrained models, published on PyPI.</p>
+                </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
-            </div>
+                <a href="https://cse-521-dmql-final-projectgit-jgobwidwmdae4ppsxzzbyx.streamlit.app/" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://cse-521-dmql-final-projectgit-jgobwidwmdae4ppsxzzbyx.streamlit.app/" target="_blank" rel="noreferrer"><h2>Data Analysis on Brazillian E-Commerce data</h2></a>
+                    <p>Developed a relational database model and SQL queries for a 100K Brazilian e-commerce dataset, and built an interactive Power BI dashboard with DAX measures and geo-visualizations to analyze sales trends, customer behavior, and payment insights.</p>
+                </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
-                <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
-            </div>
+                <a href="https://englishtotamil.streamlit.app/" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://englishtotamil.streamlit.app/" target="_blank" rel="noreferrer"><h2>English to Tamil Translator</h2></a>
+                    <p>Interactive English–Tamil translation web app built with a custom PyTorch Transformer implementation from scratch and deployed via Streamlit.</p>
+                </div>
             <div className="project">
                 <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
